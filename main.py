@@ -21,7 +21,7 @@ RAINBOW = ("🟥", "🟧", "🟨", "🟩", "🟦", "🟪")
 
 @register(
     "astrbot_plugin_progress_bar",
-    "DeepSeek",
+    "lZZXJl",
     "把办事进度渲染成进度条写进日志",
     "0.1.0",
 )
