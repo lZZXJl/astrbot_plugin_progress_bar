@@ -1,0 +1,64 @@
+{
+  "enable_llm_tool": {
+    "type": "bool",
+    "default": true,
+    "description": "LLM 工具开关：关掉后 report_progress 会被拒绝，只剩手动指令。"
+  },
+  "bar_width": {
+    "type": "int",
+    "default": 8,
+    "description": "进度条格数。手机上日志窗口窄，别设太大，六到十六之间够看。"
+  },
+  "min_interval": {
+    "type": "int",
+    "default": 1,
+    "description": "同一会话两次上报的最小间隔（秒）。太密会把日志冲掉。"
+  },
+  "chat_enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "除了写日志，还在会话里维持一条会变的进度消息（撤上一条、发新的）。"
+  },
+  "chat_scope": {
+    "type": "string",
+    "default": "private",
+    "options": ["private", "all"],
+    "description": "private=只在私聊发；all=群聊也发。群多的地方别开 all。"
+  },
+  "chat_interval": {
+    "type": "int",
+    "default": 3,
+    "description": "会话里两次更新之间至少隔几秒。太勤容易被风控。"
+  },
+  "prefix": {
+    "type": "string",
+    "default": "[进度]",
+    "description": "日志行前缀，方便在日志里筛。"
+  },
+  "color": {
+    "type": "bool",
+    "default": true,
+    "description": "旧项，留着不删。颜色实际由 color_mode 决定。"
+  },
+  "color_mode": {
+    "type": "string",
+    "default": "rainbow",
+    "options": ["rainbow", "emoji", "ansi", "none"],
+    "description": "rainbow=彩虹铺色（默认）；emoji=单色方块，颜色由 color_filled 定；ansi=转义码上色，日志窗口吃转义码时才是彩的；none=纯字符。"
+  },
+  "color_code": {
+    "type": "string",
+    "default": "38;5;39",
+    "description": "ANSI 颜色码。38;5;39 是鲸鱼那种蓝；换 38;5;208 是橙，38;5;2 是绿。"
+  },
+  "color_filled": {
+    "type": "string",
+    "default": "🟦",
+    "description": "emoji 模式下已走那截用哪个方块：🟦🟥🟧🟨🟩🟪🟫⬛，或者 ▰ 这类字符也收。"
+  },
+  "color_empty": {
+    "type": "string",
+    "default": "⬜",
+    "description": "emoji 模式下没走那截用哪个：⬜⬛▱，随你。"
+  }
+}

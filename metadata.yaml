@@ -1,0 +1,24 @@
+name: astrbot_plugin_progress_bar
+display_name: 进度条
+short_desc: 办事时把进度条打进 AstrBot 日志，面板的日志窗口里能看着它走。
+desc: >-
+  给 LLM 提供 report_progress 工具，做长活时按节点上报百分比，
+  插件把它渲染成一行进度条写进日志：
+  [进度] ███████░░░░░  58%  下载洛雪  | 01:23
+
+  没有通知栏，也不改任何既有插件。日志一行一条，不原地刷新。
+  手动调试：/进度 45 下载中
+version: 0.1.0
+author: DeepSeek
+repo: ""
+license: MIT
+tags:
+  - 工具
+  - 日志
+  - 进度
+support_platforms:
+  - aiocqhttp
+  - telegram
+  - discord
+  - webchat
+astrbot_version: ">=4.10,<5"
