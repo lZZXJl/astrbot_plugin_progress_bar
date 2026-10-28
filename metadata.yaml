@@ -9,8 +9,10 @@ desc: >-
   没有通知栏，也不改任何既有插件。日志一行一条，不原地刷新。
   手动调试：/进度 45 下载中
 version: 0.1.0
-author: DeepSeek
-repo: ""
+author: lZZXJl
+repo: https://github.com/lZZXJl/astrbot_plugin_progress_bar
+homepage: https://github.com/lZZXJl/astrbot_plugin_progress_bar
+social_link: https://github.com/lZZXJl
 license: MIT
 tags:
   - 工具
